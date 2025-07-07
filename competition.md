@@ -27,3 +27,11 @@ It works similarly to Ink, with a big scripting language at its core; this gives
 The language can be compiled to HTML, which does make it web-compatible - they also give you the ability to insert images, making it good for less text-heavy stories.
 
 ChoiceScript has support for basic control flow (like `if` statements), but also provides support for more powerful statements like `goto` and `label`; they also allow the user to define their own mutable variables, and provide support for string interpolation. Overall, it gives the user more than enough to make complex stories that track the user's decisions throughout.
+
+## [Ren'Py](https://www.renpy.org)
+Ren'Py has been used to make some very successful games in the past, such as [Slay the Princess](https://store.steampowered.com/app/1989270/Slay_the_Princess__The_Pristine_Cut/) - though it's made to create visual novels, CYOAs have many similarities with such a medium.
+
+The software, similar to ChoiceScript, only provides a scripting language for the user to work with - they chose to model it around being similar to Python, making it easy to approach for beginners. The developers of the software also built GUI customisation into the language, as every game requires a GUI to interact with adventure, giving the maker further customisation over their game.\
+The language itself is even more extensive compared to ChoiceScript and Ink, providing even more control flow - it also supports manual management of the screen, camera and current scene to allow for more animated games. As expected, it provides support for images in the language as well.
+
+Ren'Py can be compiled to run on the web as well, allowing it be hosted and embedded into a web page.
