@@ -35,3 +35,15 @@ The software, similar to ChoiceScript, only provides a scripting language for th
 The language itself is even more extensive compared to ChoiceScript and Ink, providing even more control flow - it also supports manual management of the screen, camera and current scene to allow for more animated games. As expected, it provides support for images in the language as well.
 
 Ren'Py can be compiled to run on the web as well, allowing it be hosted and embedded into a web page.
+
+## [Inform 7](https://ganelson.github.io/inform-website/index.html)
+Like most of the software listed here, Inform 7 works with a scripting language being used to build up a rich story. This product, unlike the others, uses more natural language for the scripting language; statements such as:
+```
+The Cobble Crawl is a room. "You are crawling over cobbles in a low passage. There is a dim light at the east end of the passage."
+```
+and
+```
+Above the Debris Room is the Sloping E/W Canyon. West of the Canyon is the Orange River Chamber.
+```
+would be valid syntax. This makes it a bit easier to approach story creation, as it sticks quite closely to phrases that you might commonly use.\
+Past this, tooling is limited; it lacks a GUI like Twine, or a code editor like inky. It does have easy web interop though, requiring just a short phrase (`Release along with an interpreter.`) to be able to publish it to a website, making it easy to embed your games into a webpage.
