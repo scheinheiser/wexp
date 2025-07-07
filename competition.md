@@ -12,3 +12,11 @@ They also allow you to embed HTML into the passage.\
 Twine also offers a builtin story tester and debugger, which allows you to keep track of all of your variables, deactivate certain macros, and more.
 
 [^1]: It only consists of `if` statements, and you can only obscure/show text with the effect; they do provide a variety of coniditons though.
+
+## Ink
+Ink is less popular than Twine, but still mentioned quite frequently.\
+It works much differently compared to Twine, being based on an extensive scripting language called ink; they also have created multiple tools to make it easier to work with ink, such as [inklewriter](https://www.inklestudios.com/inklewriter/) and inky (a code editor, which provides error highlighting/hot reloading/etc).\
+\
+The software is intended for easy integration with existing games, and is made for creating text-based CYOAs - it does, however, provide support for web-based stories.\
+You can compile the `.ink` scripts to `.js` files, which can be hosted by the user so clients can access it online.\
+They also provide some web-specific functionality - you can include inline images, and they also allow for CSS interoperability (which gives you the ability to add extra styling to certain elements); this gives the user more customisability over what their stories look like.
