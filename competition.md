@@ -15,7 +15,7 @@ Twine also offers a builtin story tester and debugger, which allows you to keep 
 
 ## [Ink](https://www.inklestudios.com/ink/)
 Ink is less popular than Twine, but still mentioned quite frequently.\
-It works much differently compared to Twine, being based on an extensive scripting language called ink; they also have created multiple tools to make it easier to work with ink, such as [inklewriter](https://www.inklestudios.com/inklewriter/) and inky (a code editor, which provides error highlighting/hot reloading/etc).
+It works much differently compared to Twine, being based on an extensive scripting language called ink; they also have created multiple tools to make it easier to work with ink, such as [inklewriter](https://www.inklestudios.com/inklewriter/) and Inky (a code editor, which provides error highlighting/hot reloading/etc).
 
 The software is intended for easy integration with existing games, and is made for creating text-based CYOAs - it does, however, provide support for web-based stories.\
 You can compile the `.ink` scripts to `.js` files, which can be hosted by the user so clients can access it online.\
@@ -23,7 +23,7 @@ They also provide some web-specific functionality - you can include inline image
 
 ## [ChoiceScript](https://www.choiceofgames.com/make-your-own-games/choicescript-intro/)
 This software is relatively niche, but it still has facilitated the creation of some impressive software.\
-It works similarly to Ink, with a big scripting language at its core; this gives the user the power to create complex and extensive stories. It does lack the ecosystem of Ink though, as it doesn't have tooling similar to inklewriter or inky.\
+It works similarly to Ink, with a big scripting language at its core; this gives the user the power to create complex and extensive stories. It does lack the ecosystem of Ink though, as it doesn't have tooling similar to inklewriter or Inky.\
 The language can be compiled to HTML, which does make it web-compatible - they also give you the ability to insert images, making it good for less text-heavy stories.
 
 ChoiceScript has support for basic control flow (like `if` statements), but also provides support for more powerful statements like `goto` and `label`; they also allow the user to define their own mutable variables, and provide support for string interpolation. Overall, it gives the user more than enough to make complex stories that track the user's decisions throughout.
@@ -46,4 +46,16 @@ and
 Above the Debris Room is the Sloping E/W Canyon. West of the Canyon is the Orange River Chamber.
 ```
 would be valid syntax. This makes it a bit easier to approach story creation, as it sticks quite closely to phrases that you might commonly use.\
-Past this, tooling is limited; it lacks a GUI like Twine, or a code editor like inky. It does have easy web interop though, requiring just a short phrase (`Release along with an interpreter.`) to be able to publish it to a website, making it easy to embed your games into a webpage.
+Past this, tooling is limited; it lacks a GUI like Twine, or a code editor like Inky. It does have easy web interop though, requiring just a short phrase (`Release along with an interpreter.`) to be able to publish it to a website, making it easy to embed your games into a webpage.
+
+------
+
+The most important aspects to include, I believe, would be a scripting language[^2] along with some web interoperability; at the very least, this allows the user to make their stories and embed them into websites, making it easier to publish games onto sites like [itch](https://itch.io).\
+I think that having a code editor would be a good addition on top of this, as it'd allow you to provide features to help development in the language moreso than a generic code editor. It's far from necessary though, as plugins could be developed for existing editors.\
+A debugger/tester would be a necessary feature - while manual testing/helpful error messages would serve most user's needs, there would be situations where inspection of the code might not be enough. Having access to the state all variables in the program at any point would be a very useful feature, especially as codebases increase in size.
+
+If you'd want to go down a more GUI-based route, I think that it would be good to try and guide the users more; while Twine's GUI is nice, I think that it is a bit hard to approach. There are adequate tutorials online, but I think that the software should be able to give the user enough information to be able to confidently use it (at least for basic features).
+
+Finally, I think that it'd be a very good idea to have a pane to view/interact with the story as you make updates to the program, similar to Ink's editor Inky. This would make it easier to work on the story, as you'd be able to test each segment as you go on and make changes as needed.
+
+[^2]: Regarding the implementation of the language, I think that it would be best to take a mix of Inform and Ink/ChoiceScript's approach; while natural language makes it easier to approach for the user, it also makes it more difficult to parse the source code.
