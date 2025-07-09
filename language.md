@@ -1,13 +1,22 @@
 # Programming Language Options
 There are a variety of programming languages that could be used to create the CYOA product, and the platform that it's hosted on will impose some restrictions on which language could be used.
 
-## Swift
+## [Swift](https://swift.org)
 Swift is a programming language developed by Apple, made to replace Objective-C[^1]; it attempts to combine influences from languages across all [paradigms](https://en.wikipedia.org/wiki/Programming_paradigm), such as [Haskell](https://www.haskell.org), [Python](https://www.python.org) and [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)).\
 It's strongly typed[^2], and is compiled to LLVM (after a number of optimisations have been performed on the code); this makes the language quite fast. It has an IDE in the form of XCode and many community-developed tools to assist in the development process.
-Use of this language isn't necessary to develop IOS apps, but it makes it much easier; you could use Objective-C, but it's older and slower - Swift was made to replace it, and does a much better job overall. Other languages can be used (e.g. Dart, C#, Javascript), but Swift's Objective-C compatibility (for legacy codebases) and support by Apple just makes it much easier to develop IOS apps.
+Use of this language isn't necessary to develop IOS apps, but it makes it much easier; you could use Objective-C, but it's older and slower - Swift was made to replace it, and does a much better job overall. Other languages can be used (e.g. Dart, C#, JavaScript), but Swift's Objective-C compatibility (for legacy codebases) and support by Apple just makes it much easier to develop IOS apps.
 
 I think that Swift would be a decent choice of language for the product, but purely if the task was to make an IOS app for the product; while it's a good language, it's outperformed by other languages when the topic isn't IOS development - for example, it has good memory safety but a language like Rust is just better in that regard.\
 If the topic is IOS development, however, I think that it should be the first choice - Apple's extensive support for the language makes it the obvious choice for such a route. Swift is also a fairly popular language, so it wouldn't be too difficult to find developers who are highly competent at using it.
 
 [^1]: This is a superset of the C programming language, making it more object-oriented than base C is.
-[^2]: Simply put, variables of one type can be implicitly (no `cast` statement required) cast to another type.
+[^2]: Simply put, variables of one type can be implicitly (no explicit casting required) casted to another type.
+
+## [Kotlin](https://kotlinlang.org)
+This language was released by JetBrains, a company behind very widely-used tooling for programmers (they've made IDEs for several popular languages, like PyCharm for Python and CLion for C/C++). This language has been adopted by many highly successful corporations, such as McDonald's, AWS (a cloud hosting service), Adobe and Forbes; it's typically used to create apps for Android, with it being the most commonly used language for such a task. Kotlin can be used for web development as it can be compiled to JavaScript, and it can also be used for IOS app development (as it can be compiled to LLVM, which can then be converted into native machine code).\
+The language was designed with Java interoperability in mind (it can be compiled to run on the JVM[^3]), as Java previously was the most frequently used language for Android app development - this makes it very easy to integrate Kotlin into legacy app codebases; it also has similar compilation/runtime performance to Java, which itself is a fairly fast language.\
+As I mentioned prior, JetBrains developed this language - they also created an IDE to go along with it, which streamlines Kotlin development (it also helps with Java development) called [Intellij IDEA](https://www.jetbrains.com/idea/). It offers a paid version, which is fairly expensive (£574.00 for a year of use for a corporation) but it also has a free version; there is also a completely free IDE with [Android Studio](https://developer.android.com/studio), which focuses on Android development.
+
+Overall, I think that Kotlin would be a great choice for a CYOA product; similar to Swift, I think it would be best suited for Android app development though - other languages outperform it for areas like desktop apps, limiting it to that platform. It could be a good choice to use over JavaScript/TypeScript[^3] however, as Kotlin can be compiled to JavaScript; the language is often dislked due to some odd design choices, its weak typing and bloated ecosystem, so replacing it with Kotlin could be an option. The only thing to keep in mind would be that it'd be much easier to find a developer who knows JavaScript (it being the most used programming language currently) than a Kotlin developer - outside of this, I would suggest Kotlin over JavaScript for web development.
+
+[^3]: A superset of JavaScript with added syntax to denote types and increase the strength of its types.
